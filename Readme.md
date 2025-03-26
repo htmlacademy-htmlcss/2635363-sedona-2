@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Виталий Иванов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2635363).
-* Наставник: `Неизвестно`.
+- Студент: [Виталий Иванов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2635363).
+- Наставник: [Ирина Малиновская] (https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
