@@ -2,6 +2,7 @@
 
 - Студент: [Виталий Иванов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2635363).
 - Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
+- Сайт: [Мой проект Салона](https://vittivanov.github.io/2635363-sedona-2/).
 
 ---
 
