@@ -41,6 +41,40 @@
           </div>
             <button class="header__button">Хочу сюда!</button>
         </div>
+
+        <form class="modal-form visually-hidden">
+          <h2 class="modal-form__title">Поиск гостиницы в Седоне</h2>
+          <section class="modal-form__dates">
+            <div class="modal-form__date">
+              <h4>Дата заезда:</h4>
+              <input type="text" value="27 апреля 2020">
+              <span>Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <div class="modal-form__date">
+              <h4>Дата выезда:</h4>
+              <input type="text" value="1 сентября 2023">
+              <span>На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+          </section>
+          <section class="modal-form__guests">
+            <div class="modal-form__guest">
+              <h4>Взрослые:</h4>
+              <button type="button">-</button>
+              <span>2</span>
+              <button type="button">+</button>
+            </div>
+            <div class="modal-form__guest">
+              <h4>Дети:</h4>
+              <span>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              <button type="button">-</button>
+              <span>2</span>
+              <button type="button">+</button>
+            </div>
+          </section>
+
+          <button class="modal-form__close" type="button" aria-label="закрыть окно поиска"></button>
+          <button class="modal-form__submit" type="submit">Найти</button>
+        </form>
       </header>
 
       <main>
@@ -126,14 +160,16 @@
             <button  class="offers__booking-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
           </section>
         </section>
+
+        <section class="subscribe">
+          <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
+          <span class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</span>
+          <input class="subscribe__input" type="email" placeholder="Ваш e-mail">
+          <input class="subscribe__button" type="submit" value="Подписаться">
+        </section>
+
       </main>
 
-      <section class="subscribe">
-        <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-        <span class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</span>
-        <input class="subscribe__input" type="email" placeholder="Ваш e-mail">
-        <input class="subscribe__button" type="submit" value="Подписаться">
-      </section>
 
       <footer class="footer">
 
@@ -170,7 +206,6 @@
             </a>
           </div>
         </div>
-
       </footer>
     </div>
   </body>
