@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="место для отдыха, Седона, городок в Аризоне, Каньон">
     <meta name="description" content="Седона, городок в Аризоне">
     <title>Добро пожаловать в Седону</title>
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
     <div class="page">
       <header class="header">
@@ -39,90 +42,56 @@
             <img class="header__favorites-icon" src="*" loading="lazy" alt="добавить в избранное">
             <span class="header__favorites-count">12</span>
           </div>
-            <button class="header__button">Хочу сюда!</button>
+          <button class="header__button">Хочу сюда!</button>
         </div>
-
-        <form class="modal-form visually-hidden">
-          <h2 class="modal-form__title">Поиск гостиницы в Седоне</h2>
-          <section class="modal-form__dates">
-            <div class="modal-form__date">
-              <h4>Дата заезда:</h4>
-              <input type="text" value="27 апреля 2020">
-              <span>Мы не можем отправить вас в прошлое.</span>
-            </div>
-            <div class="modal-form__date">
-              <h4>Дата выезда:</h4>
-              <input type="text" value="1 сентября 2023">
-              <span>На эти даты есть свободные номера. Пока есть.</span>
-            </div>
-          </section>
-          <section class="modal-form__guests">
-            <div class="modal-form__guest">
-              <h4>Взрослые:</h4>
-              <button type="button">-</button>
-              <span>2</span>
-              <button type="button">+</button>
-            </div>
-            <div class="modal-form__guest">
-              <h4>Дети:</h4>
-              <span>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-              <button type="button">-</button>
-              <span>2</span>
-              <button type="button">+</button>
-            </div>
-          </section>
-
-          <button class="modal-form__close" type="button" aria-label="закрыть окно поиска"></button>
-          <button class="modal-form__submit" type="submit">Найти</button>
-        </form>
       </header>
 
       <main>
-      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+        <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
 
         <section class="hero">
-            <img class="hero__image" src="*" loading="lazy" alt="Фото Седоны">
-            <h2 class="hero__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p class="hero__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <img class="hero__image" src="*" loading="lazy" alt="Фото Седоны">
+          <h2 class="hero__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="hero__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
 
-          <ul class="advantages">
+        <ul class="advantages">
 
-            <li class="advantages__item">
-              <div>
-                <h2 class="advantages__title">Настоящий городок</h2>
-                <p class="advantages__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              </div>
-              <figure class="advantages__item-image">
-                <img src="*" loading="lazy" alt="Фото Седоны">
-              </figure>
-            </li>
+          <li class="advantages__item">
+            <div>
+              <h2 class="advantages__title">Настоящий городок</h2>
+              <p class="advantages__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <figure class="advantages__item-image">
+              <img src="*" loading="lazy" alt="Фото Седоны">
+            </figure>
+          </li>
 
-            <li class="advantages__item">
-              <h2 class="advantages__title">Небольшая площадь</h2>
-              <p class="advantages__text">Все достопримечательности находятся очень близко</p>
-            </li>
+          <li class="advantages__item">
+            <h2 class="advantages__title">Небольшая площадь</h2>
+            <p class="advantages__text">Все достопримечательности находятся очень близко</p>
+          </li>
 
-            <li class="advantages__item">
-              <h2 class="advantages__title">Красивая дорога</h2>
-              <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
+          <li class="advantages__item">
+            <h2 class="advantages__title">Красивая дорога</h2>
+            <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
 
-            <li class="advantages__item">
-              <h2 class="advantages__title">Мало туристов</h2>
-              <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
+          <li class="advantages__item">
+            <h2 class="advantages__title">Мало туристов</h2>
+            <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
 
-            <li class="advantages__item">
-              <figure class="advantages__item-image">
-                <img src="*" loading="lazy" alt="Фото Седоны">
-              </figure>
-              <div>
-                <h2 class="advantages__title">Там есть мост дьявола</h2>
-                <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              </div>
-            </li>
-          </ul>
+          <li class="advantages__item">
+            <figure class="advantages__item-image">
+              <img src="*" loading="lazy" alt="Фото Седоны">
+            </figure>
+            <div>
+              <h2 class="advantages__title">Там есть мост дьявола</h2>
+              <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+          </li>
+        </ul>
 
         <section class="offers">
           <h2 class="offers__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
@@ -155,9 +124,10 @@
           </article>
 
           <section class="offers__booking">
-            <h2  class="offers__booking-title">Заинтересовались?</h2>
-            <p  class="offers__booking-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button  class="offers__booking-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+            <h2 class="offers__booking-title">Заинтересовались?</h2>
+            <p class="offers__booking-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
+              гостиниц в Седоне</p>
+            <a class="offers__booking-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
           </section>
         </section>
 
@@ -174,39 +144,75 @@
       <footer class="footer">
 
         <div class="footer__contacts">
-          <div class="footer__social">
-            <span class="visually-hidden">наши контакты в соцсетях:</span>
+          <ul class="footer__social">
+            <p class="visually-hidden">наши контакты в соцсетях:</p>
 
-              <div class="footer__social-item">
-                <a class="footer__social-link" href="https://vk.com/htmlacademy">
-                  <img src="*" loading="lazy" alt="vkontakte">
-                </a>
-              </div>
-              <div class="footer__social-item">
-                <a class="footer__social-link" href="https://t.me/htmlacademy ">
-                  <img src="*" loading="lazy" alt="telegram">
-                </a>
-              </div>
-              <div class="footer__social-item">
-                <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
-                  <img src="*" loading="lazy" alt="youtube">
-                </a>
-              </div>
-          </div>
-
-          <div class="footer__phone">
-            <span class="visually-hidden">свяжитесь с нами по телефону:</span>
-            <a class="footer__phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </div>
-
-          <div class="footer__site">
-            <span class="visually-hidden">ссылка на сайт разработчика:</span>
-            <a class="footer__site-link" href="https://htmlacademy.ru/">
-              <img src="*" loading="lazy" alt="htmlacademy">
-            </a>
-          </div>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://vk.com/htmlacademy">
+                <img src="*" loading="lazy" alt="vkontakte">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://t.me/htmlacademy ">
+                <img src="*" loading="lazy" alt="telegram">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
+                <img src="*" loading="lazy" alt="youtube">
+              </a>
+            </li>
         </div>
-      </footer>
+
+        <div class="footer__phone">
+          <span class="visually-hidden">свяжитесь с нами по телефону:</span>
+          <a class="footer__phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
+
+        <div class="footer__site">
+          <span class="visually-hidden">ссылка на сайт разработчика:</span>
+          <a class="footer__site-link" href="https://htmlacademy.ru/">
+            <img src="*" loading="lazy" alt="htmlacademy">
+          </a>
+        </div>
     </div>
+    </footer>
+    </div>
+
+    <form class="modal-form visually-hidden">
+      <h2 class="modal-form__title">Поиск гостиницы в Седоне</h2>
+      <section class="modal-form__dates">
+        <div class="modal-form__date">
+          <h4>Дата заезда:</h4>
+          <input type="text" value="27 апреля 2020">
+          <p>Мы не можем отправить вас в прошлое.</p>
+        </div>
+        <div class="modal-form__date">
+          <h4>Дата выезда:</h4>
+          <input type="text" value="1 сентября 2023">
+          <p>На эти даты есть свободные номера. Пока есть.</p>
+        </div>
+      </section>
+      <section class="modal-form__guests">
+        <div class="modal-form__guest">
+          <h4>Взрослые:</h4>
+          <button type="button">-</button>
+          <span>2</span>
+          <button type="button">+</button>
+        </div>
+        <div class="modal-form__guest">
+          <h4>Дети:</h4>
+          <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+            размещаются бесплатно.</p>
+          <button type="button">-</button>
+          <span>2</span>
+          <button type="button">+</button>
+        </div>
+      </section>
+
+      <button class="modal-form__close" type="button" aria-label="закрыть окно поиска"></button>
+      <button class="modal-form__submit" type="submit">Найти</button>
+    </form>
   </body>
+
 </html>

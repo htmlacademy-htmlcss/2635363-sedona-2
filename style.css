@@ -1,0 +1,28 @@
+:root {
+  --page_background: #F2F2F2;
+  --first_background-color: #82B3D3;
+  --second_background-color: #E6F0F6;
+  --third_background-color: #F0F5F9;
+  --first-font-color: #000000;
+  --second-font-color: rgba(255, 255, 255, 1);
+  --error: #FF5757;
+
+  --input-background-color: #F2F2F2;
+  --input-background-color__active: #E6E6E6;
+  --input-background-font-color: #F2F2F2;
+
+  --button__first-color: #756157;
+  --button__first-color_active: #615048;
+  --button__second-color: #82B3D3;
+  --button__second-color_active: #68A2CA;
+  --button__third-color: #7DB54F;
+  --button__third-color_active: #6C9E42;
+  --button__disabled-color: #E5E5E5;
+
+  --footer__social-color: #83B3D3;
+  --footer__social-color_active: #68A2CA;
+  --footer__social-color_disabled: #D2E4F0;
+  --footer__font-color: #000000;
+  --footer__font-color_active: #756157;
+  --footer__font-color_disabled: #D6D0CD;
+}
