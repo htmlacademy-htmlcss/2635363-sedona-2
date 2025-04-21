@@ -1,8 +1,27 @@
+@font-face {
+  font-family: "PTSans";
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
 :root {
+  --main-font: "PTSans", system-ui, "Arial", sans-serif;
+
   --page_background: #F2F2F2;
-  --first_background-color: #82B3D3;
+  --first_background-color: #FFFFFF;
   --second_background-color: #E6F0F6;
   --third_background-color: #F0F5F9;
+  --fourth_background-color: #82B3D3;
   --first-font-color: #000000;
   --second-font-color: rgba(255, 255, 255, 1);
   --error: #FF5757;
@@ -25,4 +44,188 @@
   --footer__font-color: #000000;
   --footer__font-color_active: #756157;
   --footer__font-color_disabled: #D6D0CD;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 40px;
+  font-size: 18px;
+  line-height: 1.167;
+  background-color: var(--page_background);
+  font-family: var(--main-font);
+}
+
+.page h1 {
+  font-size: 60px;
+  line-height: 1.3;
+}
+
+.page h2 {
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.page h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration-color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--first_background-color);
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.btn {
+  text-align: center;
+  font: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--second-font-color);
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(50, 50, 50, 0.25);
+  box-sizing: border-box;
+  background-color: var(--button__first-color);
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 64px;
+  min-height: 64px;
+  padding: 0 70px;
+}
+
+.header__logo-image {
+  width: 140px;
+  height: 70px;
+  margin-bottom: -6px;
+  position: relative;
+  z-index: 5;
+}
+
+.header__nav-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.header__nav-item {
+  font-weight: 700;
+}
+
+.header__nav-link {
+  font-size: 24px;
+  color: var(--first-font-color);
+}
+
+.header__userbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 1200px;
+  background-color: var(--first_background-color);
+}
+
+.hero__image-wrapper {
+  margin: 0;
+  padding: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.hero__image {
+  width: 100%;
+  height: 485px;
+  background-position: center;
+  object-fit: cover;
+}
+
+.hero__image-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: -428px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("svg/decoration.svg");
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.hero__text-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__title {
+  max-width: 700px;
+  text-align: center;
+}
+
+.hero__text {
+  font-size: 26px;
 }

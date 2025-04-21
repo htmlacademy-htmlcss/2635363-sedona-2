@@ -7,14 +7,16 @@
     <meta name="keywords" content="HTML Academy, Седона">
     <meta name="description" content="Седона, городок в Аризоне">
     <title>Страница каталога</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.svg">
   </head>
 
   <body>
     <div class="page">
 
-      <header class="header">
+      <header class="header container">
         <a href="index.html" class="header__logo" aria-label="вернуться на главную страницу">
-          <img class="header__logo-image" src="*" loading="lazy" alt="логотип сайта">
+          <img class="header__logo-image" src="svg/page-logo.svg" loading="lazy" alt="логотип сайта">
         </a>
         <nav class="header__nav">
           <ul class="header__nav-list">
@@ -37,20 +39,22 @@
         </nav>
 
         <div class="header__userbar">
-          <input class="header__search" type="search" placeholder="Поиск">
+          <div class="header__search">
+            <span class="visually-hidden">Поиск</span>
+            <img class="header__search-icon" src="svg/search-icon.svg" loading="lazy" alt="иконка поиска">
+          </div>
           <div class="header__favorites">
-            <img class="header__favorites-icon" src="*" loading="lazy" alt="добавить в избранное">
+            <img class="header__favorites-icon" src="svg/heart-icon.svg" loading="lazy" alt="добавить в избранное">
             <span class="header__favorites-count">12</span>
           </div>
-          <button class="header__button">Хочу сюда!</button>
+          <button class="header__button btn">Хочу сюда!</button>
         </div>
-
       </header>
 
-      <main>
+      <main class="container">
         <h1>Гостиницы Седоны</h1>
 
-        <form class="filter_form" action="*" method="get">
+        <form class="filter__form" action="*" method="get">
           <div>
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item">
@@ -102,8 +106,8 @@
           </div>
 
           <div class="filter__btns">
-            <button type="submit">Применить</button>
-            <button type="reset">Сбросить</button>
+            <button class="btn" type="submit">Применить</button>
+            <button class="btn" type="reset">Сбросить</button>
           </div>
         </form>
 
@@ -113,43 +117,48 @@
           <p class="filter-results__text">Сначала дешевые</p>
 
           <div class="hotel__card">
+            <img class="hotel__card-image" src="img/hotel-1.jpg" loading="lazy" alt="Amara Resort & Spa">
             <h3 class="hotel__card-title">Amara Resort & Spa</h3>
             <p class="hotel__card-type">Гостиница</p>
             <span class="hotel__card-price">От 4000 ₽</span>
-            <a class="hotel__card-link" href="*">подробнее</a>
-            <button class="hotel__card-favorites" type="button">в избранное</button>
+            <a class="hotel__card-link btn" href="*">подробнее</a>
+            <button class="hotel__card-favorites btn" type="button">в избранное</button>
           </div>
 
           <div class="hotel__card">
+            <img class="hotel__card-image" src="img/hotel-2.jpg" loading="lazy" alt="Villas at Poco Diablo">
             <h3 class="hotel__card-title">Villas at Poco Diablo</h3>
             <p class="hotel__card-type">Гостиница</p>
             <span class="hotel__card-price">От 5000 ₽</span>
-            <a class="hotel__card-link" href="*">подробнее</a>
-            <button class="hotel__card-favorites" type="button">в избранное</button>
+            <a class="hotel__card-link btn" href="*">подробнее</a>
+            <button class="hotel__card-favorites btn" type="button">в избранное</button>
           </div>
 
           <div class="hotel__card">
+            <img class="hotel__card-image" src="img/hotel-3.jpg" loading="lazy" alt="Desert Quail Inn">
             <h3 class="hotel__card-title">Desert Quail Inn</h3>
             <p class="hotel__card-type">Гостиница</p>
             <span class="hotel__card-price">От 2500 ₽</span>
-            <a class="hotel__card-link" href="*">подробнее</a>
-            <button class="hotel__card-favorites" type="button">в избранное</button>
+            <a class="hotel__card-link btn" href="*">подробнее</a>
+            <button class="hotel__card-favorites btn" type="button">в избранное</button>
           </div>
 
           <div class="hotel__card">
-            <h3 class="hotel__card-title">Amara Resort & Spa</h3>
+            <img class="hotel__card-image" src="img/hotel-4.jpg" loading="lazy" alt="Desert Quail Inn">
+            <h3 class="hotel__card-title">Desert Quail Inn</h3>
             <p class="hotel__card-type">Гостиница</p>
-            <span class="hotel__card-price">От 4000 ₽</span>
-            <a class="hotel__card-link" href="*">подробнее</a>
-            <button class="hotel__card-favorites" type="button">в избранное</button>
+            <span class="hotel__card-price">От 2500 ₽</span>
+            <a class="hotel__card-link btn" href="*">подробнее</a>
+            <button class="hotel__card-favorites btn" type="button">в избранное</button>
           </div>
 
           <div class="hotel__card">
+            <img class="hotel__card-image" src="img/hotel-5.jpg" loading="lazy" alt="GreenTree Inn">
             <h3 class="hotel__card-title">GreenTree Inn</h3>
             <p class="hotel__card-type">Гостиница</p>
             <span class="hotel__card-price">От 1500 ₽</span>
-            <a class="hotel__card-link" href="*">подробнее</a>
-            <button class="hotel__card-favorites" type="button">в избранное</button>
+            <a class="hotel__card-link btn" href="*">подробнее</a>
+            <button class="hotel__card-favorites btn" type="button">в избранное</button>
           </div>
         </section>
 
@@ -169,34 +178,36 @@
             </li>
             <li class="pagination__item">
               <a class="pagination__link" href="*">5</a>
+            </li>
+          </ul>
         </section>
 
         <section class="subscribe">
           <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
           <span class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</span>
           <input class="subscribe__input" type="email" placeholder="Ваш e-mail">
-          <input class="subscribe__button" type="submit" value="Подписаться">
+          <input class="subscribe__button btn" type="submit" value="Подписаться">
         </section>
       </main>
 
-      <footer class="footer">
+      <footer class="footer container">
         <div class="footer__contacts">
           <ul class="footer__social">
             <p class="visually-hidden">наши контакты в соцсетях:</p>
 
             <li class="footer__social-item">
               <a class="footer__social-link" href="https://vk.com/htmlacademy">
-                <img src="*" loading="lazy" alt="vkontakte">
+                <img src="svg/social-vk.svg" loading="lazy" alt="vkontakte">
               </a>
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="https://t.me/htmlacademy ">
-                <img src="*" loading="lazy" alt="telegram">
+                <img src="svg/social-telegramm.svg" loading="lazy" alt="telegram">
               </a>
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
-                <img src="*" loading="lazy" alt="youtube">
+                <img src="svg/social-youtube.svg" loading="lazy" alt="youtube">
               </a>
             </li>
           </ul>
@@ -209,7 +220,7 @@
           <div class="footer__site">
             <span class="visually-hidden">ссылка на сайт разработчика:</span>
             <a class="footer__site-link" href="https://htmlacademy.ru/">
-              <img src="*" loading="lazy" alt="htmlacademy">
+              <img src="svg/html_academy.svg" loading="lazy" alt="htmlacademy">
             </a>
           </div>
         </div>
