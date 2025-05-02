@@ -7,7 +7,7 @@
     <meta name="keywords" content="место для отдыха, Седона, городок в Аризоне, Каньон">
     <meta name="description" content="Седона, городок в Аризоне">
     <title>Добро пожаловать в Седону</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon.svg">
   </head>
 
@@ -46,7 +46,7 @@
             <img class="header__favorites-icon" src="svg/heart-icon.svg" loading="lazy" alt="добавить в избранное">
             <span class="header__favorites-count">12</span>
           </div>
-          <button class="header__button btn">Хочу сюда!</button>
+          <button class="header__button button">Хочу сюда!</button>
         </div>
       </header>
 
@@ -55,59 +55,69 @@
 
         <section class="hero">
           <figure class="hero__image-wrapper">
-            <img class="hero__image" src="img/index-background@2x.png" loading="lazy" alt="Фото Седоны" width="1200"
-              height="485">
             <img class="hero__text-image" src="svg/welcome.svg" loading="lazy" alt="текст: добро пожаловать в Седону"
               width="458" height="352">
           </figure>
+
           <h2 class="hero__title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="hero__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
 
         <ul class="advantages">
-          <li class="advantages__item">
-            <div>
-              <h2 class="advantages__title title">Настоящий городок</h2>
-              <p class="advantages__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <li class="advantages__item advanced-item">
+            <div class="advanced__item-wrapper">
+              <div class="inform__block">
+                <h2 class="advantages__title title">Настоящий городок</h2>
+                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <figure class="advantages__item-image">
+                <img src="img/photo-1@2x.png" loading="lazy" alt="Фото Седоны" width="800" height="385">
+              </figure>
             </div>
-            <figure class="advantages__item-image">
-              <img src="img/photo-1@2x.png" loading="lazy" alt="Фото Седоны" width="800" height="385">
-            </figure>
           </li>
 
           <li class="advantages__item">
-            <h2 class="advantages__title title">Небольшая площадь</h2>
-            <p class="advantages__text">Все достопримечательности находятся очень близко</p>
+            <div class="inform__block">
+              <h2 class="advantages__title title">Небольшая площадь</h2>
+              <p>Все достопримечательности находятся очень близко</p>
+            </div>
           </li>
 
           <li class="advantages__item ">
-            <h2 class="advantages__title title">Красивая дорога</h2>
-            <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-
-          <li class="advantages__item ">
-            <h2 class="advantages__title title">Мало туристов</h2>
-            <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
+            <div class="inform__block">
+              <h2 class="advantages__title title">Красивая дорога</h2>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
           </li>
 
           <li class="advantages__item">
-            <figure class="advantages__item-image">
-              <img src="img/photo-2.jpg" loading="lazy" alt="Фото Седоны" width="800" height="385">
-            </figure>
-            <div>
-              <h2 class="advantages__title">Там есть мост дьявола</h2>
-              <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <div class="inform__block">
+              <h2 class="advantages__title title">Мало туристов</h2>
+              <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </li>
+
+          <li class="advantages__item advanced-item">
+            <div class="advanced__item-wrapper">
+              <figure class="advantages__item-image">
+                <img src="img/photo-2.jpg" loading="lazy" alt="Фото Седоны" width="800" height="385">
+              </figure>
+              <div class="inform__block">
+                <h2 class="advantages__title">Там есть мост дьявола</h2>
+                <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
             </div>
           </li>
         </ul>
 
         <section class="offers">
-          <h2 class="offers__title title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <span class="offers__subtitle">Опытный персонал и качественное обслуживание!</span>
-
+          <div class="offers__text">
+            <h2 class="offers__title title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <span class="offers__subtitle">Опытный персонал и качественное обслуживание!</span>
+          </div>
           <article class="offers__content">
-            <div class="offers__item">
-              <img src="svg/house.svg" alt="домик" width="75" height="72">
+            <div class="offers__item inform__block">
+              <img class="offers__item-image" src="svg/house.svg" alt="домик" width="75" height="72">
               <h3 class="offers__item-category title">Жильё</h3>
               <P class="offers__item-description">
                 Рекомендуем пожить в настоящем мотеле,
@@ -115,8 +125,8 @@
               </P>
             </div>
 
-            <div class="offers__item">
-              <img src="svg/burger.svg" alt="бургер" width="74" height="70">
+            <div class="offers__item inform__block">
+              <img class="offers__item-image" src="svg/burger.svg" alt="бургер" width="74" height="70">
               <h3 class="offers__item-category title">Еда</h3>
               <p class="offers__item-description">
                 Всегда заказывайте
@@ -124,8 +134,8 @@
               </p>
             </div>
 
-            <div class="offers__item">
-              <img src="svg/present-box.svg" alt="сувенир" width="64" height="76">
+            <div class="offers__item inform__block">
+              <img class="offers__item-image" src="svg/present-box.svg" alt="сувенир" width="64" height="76">
               <h3 class="offers__item-category title">Сувениры</h3>
               <p class="offers__item-description">
                 Не только китайского, но и настоящего местного производства!
@@ -137,38 +147,39 @@
             <h2 class="offers__booking-title title">Заинтересовались?</h2>
             <p class="offers__booking-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
               гостиниц в Седоне</p>
-            <a class="offers__booking-button btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+            <a class="offers__booking-button button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
           </section>
         </section>
 
         <section class="subscribe">
           <h2 class="subscribe__title title">Подпишитесь на рассылку</h2>
           <span class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</span>
-          <input class="subscribe__input" type="email" placeholder="Ваш e-mail">
-          <input class="subscribe__button btn" type="submit" value="Подписаться">
+          <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="subscribe__input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+            <input class="subscribe__button button" type="submit" value="Подписаться">
+          </form>
         </section>
 
       </main>
 
 
       <footer class="footer container">
-
         <div class="footer__contacts">
           <ul class="footer__social">
             <p class="visually-hidden">наши контакты в соцсетях:</p>
             <li class="footer__social-item">
               <a class="footer__social-link" href="https://vk.com/htmlacademy">
-                <img src="svg/social-vk.svg" loading="lazy" alt="vkontakte">
+                <img class="footer__social-image" src="svg/social-vk.svg" loading="lazy" alt="vkontakte">
               </a>
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="https://t.me/htmlacademy ">
-                <img src="svg/social-telegramm.svg" loading="lazy" alt="telegram">
+                <img class="footer__social-image" src="svg/social-telegramm.svg" loading="lazy" alt="telegram">
               </a>
             </li>
             <li class="footer__social-item">
               <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
-                <img src="svg/social-youtube.svg" loading="lazy" alt="youtube">
+                <img class="footer__social-image" src="svg/social-youtube.svg" loading="lazy" alt="youtube">
               </a>
             </li>
         </div>
@@ -184,45 +195,46 @@
             <img src="svg/html_academy.svg" loading="lazy" alt="htmlacademy">
           </a>
         </div>
+      </footer>
+
+
+      <form class="modal-form visually-hidden">
+        <h2 class="modal-form__title">Поиск гостиницы в Седоне</h2>
+        <section class="modal-form__dates">
+          <div class="modal-form__date">
+            <h4>Дата заезда:</h4>
+            <input type="text" value="27 апреля 2020">
+            <p>Мы не можем отправить вас в прошлое.</p>
+          </div>
+          <div class="modal-form__date">
+            <h4>Дата выезда:</h4>
+            <input type="text" value="1 сентября 2023">
+            <p>На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+        </section>
+
+        <section class="modal-form__guests">
+          <div class="modal-form__guest">
+            <h4>Взрослые:</h4>
+            <button type="button">-</button>
+            <span>2</span>
+            <button type="button">+</button>
+          </div>
+          <div class="modal-form__guest">
+            <h4>Дети:</h4>
+            <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+              размещаются бесплатно.</p>
+            <button type="button">-</button>
+            <span>2</span>
+            <button type="button">+</button>
+          </div>
+        </section>
+
+        <button class="modal-form__close" type="button" aria-label="закрыть окно поиска"></button>
+        <button class="modal-form__submit" type="submit">Найти</button>
+      </form>
+
     </div>
-    </footer>
-    </div>
-
-    <form class="modal-form visually-hidden">
-      <h2 class="modal-form__title">Поиск гостиницы в Седоне</h2>
-      <section class="modal-form__dates">
-        <div class="modal-form__date">
-          <h4>Дата заезда:</h4>
-          <input type="text" value="27 апреля 2020">
-          <p>Мы не можем отправить вас в прошлое.</p>
-        </div>
-        <div class="modal-form__date">
-          <h4>Дата выезда:</h4>
-          <input type="text" value="1 сентября 2023">
-          <p>На эти даты есть свободные номера. Пока есть.</p>
-        </div>
-      </section>
-
-      <section class="modal-form__guests">
-        <div class="modal-form__guest">
-          <h4>Взрослые:</h4>
-          <button type="button">-</button>
-          <span>2</span>
-          <button type="button">+</button>
-        </div>
-        <div class="modal-form__guest">
-          <h4>Дети:</h4>
-          <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-            размещаются бесплатно.</p>
-          <button type="button">-</button>
-          <span>2</span>
-          <button type="button">+</button>
-        </div>
-      </section>
-
-      <button class="modal-form__close" type="button" aria-label="закрыть окно поиска"></button>
-      <button class="modal-form__submit" type="submit">Найти</button>
-    </form>
   </body>
 
 </html>
