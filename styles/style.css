@@ -122,9 +122,9 @@ figure {
 img {
   margin: 0;
   padding: 0;
-  display: block;
   object-fit: contain;
   box-sizing: border-box;
+  vertical-align: middle;
 }
 
 .container {
@@ -156,6 +156,7 @@ img {
   box-shadow: 0 0 4px rgba(50, 50, 50, 0.25);
   box-sizing: border-box;
   background-color: var(--button__first-color);
+  /* background-color: transparent; */
 }
 
 /* верстка header */
@@ -245,7 +246,7 @@ img {
   width: 1200px;
   height: 485px;
   margin: 0;
-  background-image: url("/img/index-background@2x.png");
+  background-image: url("/img/index-background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -427,7 +428,6 @@ img {
   background-color: var(--button__second-color);
   border-radius: 0 4px 4px 0;
 }
-
 
 .footer a {}
 
