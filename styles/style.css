@@ -370,7 +370,7 @@ img {
 
 .filter__section {
   padding: 35px 70px 70px 70px;
-  background-image: url("/img/catalog-bg-image.jpg");
+  background-image: url("../img/catalog-bg-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   vertical-align: middle;
