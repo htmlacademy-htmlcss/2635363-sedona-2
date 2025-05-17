@@ -1,7 +1,7 @@
 /* подключение шрифтов и переменных для цветов */
 @font-face {
   font-family: "PTSans";
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "PTSans";
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -82,6 +82,7 @@ body {
 .page h1 {
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 .page h2 {
@@ -156,8 +157,14 @@ img {
   box-shadow: 0 0 4px rgba(50, 50, 50, 0.25);
   box-sizing: border-box;
   background-color: var(--button__first-color);
-  /* background-color: transparent; */
 }
+
+.button__primary {}
+
+.button__secondary {
+  padding: 8px 18px;
+}
+
 
 /* верстка header */
 
@@ -246,7 +253,7 @@ img {
   width: 1200px;
   height: 485px;
   margin: 0;
-  background-image: url("/img/index-background.png");
+  background-image: url("../img/index-background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -359,6 +366,226 @@ img {
 
 .offers__item-description {}
 
+/* стили для Каталога */
+
+.filter__section {
+  padding: 35px 70px 70px 70px;
+  background-image: url("/img/catalog-bg-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  color: var(--second-font-color);
+}
+
+.catalog-page__title {
+  margin-bottom: 8px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  list-style: none;
+  gap: 20px;
+}
+
+.breadcrumbs__icon {
+  width: 13px;
+  height: 15px;
+
+  color: var(--first-font-color);
+  font-size: 15px;
+  line-height: 15px;
+  display: block;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.breadcrumbs__item {
+  position: relative;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -13px;
+  width: 8px;
+  height: 10px;
+  background-image: url("/svg/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+
+.breadcrumbs__item:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs__link {
+  color: var(--second-font-color);
+  text-decoration: none;
+}
+
+.filter__form {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 70px;
+}
+
+.form__item {
+  display: grid;
+  grid-template-columns: repeat(auto, 1fr);
+  gap: 16px;
+  margin: 0;
+}
+
+.form__item:last-child {
+  margin: 0;
+  margin-top: auto;
+}
+
+.filter__button-acept {
+  width: 191px;
+  background-color: var(--button__second-color);
+}
+
+.filter__button-reset {
+  width: 191px;
+  background-color: transparent;
+}
+
+.filter-results {
+  padding: 50px 70px;
+  display: grid;
+  grid-template-columns: repeat(auto, 1fr);
+  gap: 20px;
+}
+
+.filter-results__form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.filter-form__item {
+  height: 48px;
+  gap: 70px;
+  background-color: var(--first_background-color);
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(50, 50, 50, 0.25);
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+.filter-form__item:hover {
+  border: 2px solid var(--first-font-color);
+}
+
+.filter-results__title {
+  flex-direction: row;
+  font-family: inherit;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.filter-results__select {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  padding: 14px 20px;
+}
+
+.filter-results__typing-button {
+  background-color: var(--first_background-color);
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.filter-results__typing-button:last-child {
+  margin-right: 0;
+}
+
+.filter-results__typing-image {
+  width: 48px;
+  height: 48px;
+  padding: 17px 16px;
+}
+
+.hotel__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.hotel__card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  background-color: var(--first_background-color);
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(50, 50, 50, 0.25);
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+.hotel__card-image {
+  width: 300px;
+  height: 212px;
+  object-fit: cover;
+  vertical-align: middle;
+  border-radius: 4px 4px 0 0;
+}
+
+.hotel__card-title {
+  width: 100%;
+  margin: 0;
+}
+
+.hotel__card-type {
+  margin: 0;
+}
+
+.hotel__card-favorites {
+  background-color: var(--button__second-color);
+}
+
+.hotel__card-favorites-added {
+  background-color: var(--button__third-color);
+}
+
+.hotel__card-stars {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.hotel__card-raiting {
+  padding: 9px 20px;
+  background-color: var(--input-background-font-color);
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(50, 50, 50, 0.25);
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+
 /* стили для footer */
 
 .footer {
@@ -387,7 +614,7 @@ img {
 
 .subscribe {
   padding: 96px 304px;
-  background-image: url("/img/form-bg-image.jpg");
+  background-image: url("../img/form-bg-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--second-font-color);
