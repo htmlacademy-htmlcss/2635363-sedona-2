@@ -510,10 +510,9 @@ img {
 .filter-results__typing-button {
   background-color: var(--first_background-color);
   cursor: pointer;
-
   margin-right: 8px;
   box-sizing: border-box;
-  padding: 14px 0;
+  padding: auto;
 }
 
 .filter-results__typing-button:last-child {
