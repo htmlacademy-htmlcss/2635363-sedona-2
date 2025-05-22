@@ -73,11 +73,11 @@
             <div class="filter__group form__item">
               <p class="filter__label">Инфраструктура:</p>
               <label class="filter__option">
-                <input class="filter__checkbox" type="checkbox" name="infrastructure" value="pool">
+                <input class="filter__checkbox" type="checkbox" name="infrastructure" value="pool" checked>
                 <span>Бассейн</span>
               </label>
               <label class="filter__option">
-                <input class="filter__checkbox" type="checkbox" name="infrastructure" value="parking">
+                <input class="filter__checkbox" type="checkbox" name="infrastructure" value="parking" checked>
                 <span>Парковка</span>
               </label>
               <label class="filter__option">
@@ -89,7 +89,7 @@
             <div class="filter__group form__item">
               <p class="filter__label">Тип жилья:</p>
               <label class="filter__option">
-                <input class="filter__radio" type="radio" name="option" value="1">
+                <input class="filter__radio" type="radio" name="option" value="1" checked>
                 <span>Гостиница</span>
               </label>
               <label class="filter__option">
@@ -104,12 +104,18 @@
 
             <div class="filter__cost form__item">
               <p>Стоимость, ₽:</p>
-              <label class="filter__cost-range">
-                <span class="">От</span>
-                <input name="min-price" type="number" min="0" max="9000" step="1" value="0">
-                <span class="">До</span>
-                <input name="max-price" type="number" min="0" max="9000" step="1" value="9000">
-              </label>
+
+              <div class="filter__cost-range">
+                <label class="cost-range__min" for="min-price">
+                  <input class="cost-range__input" id="min-price" name="min-price" type="number" value="0" required>
+                  <span class="cost-range__label">От</span>
+                </label>
+
+                <label class="cost-range__max" for="max-price">
+                  <input class="cost-range__input" id="max-price" name="max-price" type="number" value="9000" required>
+                  <span class="cost-range__label">До</span>
+                </label>
+              </div>
 
               <div class="filter__cost-scale" aria-label="ползунок для выбора цены">
                 <div class="filter__cost-range-bar"></div>
