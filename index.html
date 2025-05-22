@@ -13,7 +13,7 @@
 
   <body>
     <div class="page">
-      <header class="header container">
+      <header class="header">
         <a class="header__logo">
           <img class="header__logo-image" src="svg/page-logo.svg" alt="логотип сайта" width="140" height="70">
         </a>
@@ -50,7 +50,7 @@
         </div>
       </header>
 
-      <main class="container">
+      <main class="">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
 
         <section class="hero">
@@ -58,9 +58,11 @@
             <img class="hero__text-image" src="svg/welcome.svg" loading="lazy" alt="текст: добро пожаловать в Седону"
               width="458" height="352">
           </figure>
+        </section>
 
-          <h2 class="hero__title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="hero__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <section class="advantages__section">
+          <h2 class="advantages__section-title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="advantages__section-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
 
         <ul class="advantages">
@@ -115,37 +117,38 @@
             <h2 class="offers__title title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <span class="offers__subtitle">Опытный персонал и качественное обслуживание!</span>
           </div>
-          <article class="offers__content">
-            <div class="offers__item inform__block">
+          <div class="offers__content">
+            <article class="offers__item inform__block">
               <img class="offers__item-image" src="svg/house.svg" alt="домик" width="75" height="72">
               <h3 class="offers__item-category title">Жильё</h3>
               <P class="offers__item-description">
                 Рекомендуем пожить в настоящем мотеле,
                 всё как в кино!
               </P>
-            </div>
+            </article>
 
-            <div class="offers__item inform__block">
+            <article class="offers__item inform__block">
               <img class="offers__item-image" src="svg/burger.svg" alt="бургер" width="74" height="70">
               <h3 class="offers__item-category title">Еда</h3>
               <p class="offers__item-description">
                 Всегда заказывайте
                 топовый фирменный бургер, вы не разочаруетесь!
               </p>
-            </div>
+            </article>
 
-            <div class="offers__item inform__block">
+            <article class="offers__item inform__block">
               <img class="offers__item-image" src="svg/present-box.svg" alt="сувенир" width="64" height="76">
               <h3 class="offers__item-category title">Сувениры</h3>
               <p class="offers__item-description">
                 Не только китайского, но и настоящего местного производства!
               </p>
-            </div>
-          </article>
+            </article>
+          </div>
 
           <section class="offers__booking">
             <h2 class="offers__booking-title title">Заинтересовались?</h2>
-            <p class="offers__booking-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
+            <p class="offers__booking-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
+              предложения
               гостиниц в Седоне</p>
             <a class="offers__booking-button button button__primary">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
           </section>
@@ -163,7 +166,7 @@
       </main>
 
 
-      <footer class="footer container">
+      <footer class="footer">
         <div class="footer__contacts">
           <ul class="footer__social">
             <p class="visually-hidden">наши контакты в соцсетях:</p>
