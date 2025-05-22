@@ -432,7 +432,7 @@ img {
 .filter__form {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 150px 150px 288px 191px);
   gap: 70px;
 }
 
@@ -448,14 +448,66 @@ img {
   margin-top: auto;
 }
 
+.filter__cost {
+  margin-left: auto;
+}
+
+.filter__cost-range {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2px;
+  margin-bottom: 36px;
+}
+
+.cost-range__min,
+.cost-range__max {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 146px;
+  height: 48px;
+  background-color: var(--page_background);
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.cost-range__min {
+  border-radius: 4px 0 0 4px;
+
+}
+
+.cost-range__max {
+  border-radius: 0 4px 4px 0;
+}
+
+.cost-range__label {
+  width: auto;
+  padding: 20px 12px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.cost-range__input {
+  width: 100px;
+  background-color: var(--page_background);
+  text-align: center;
+  color: var(--first-font-color);
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+}
+
 .filter__button-acept {
-  width: 191px;
+  min-width: 191px;
   background-color: var(--button__second-color);
 }
 
 .filter__button-reset {
-  width: 191px;
+  min-width: 191px;
   background-color: transparent;
+  box-shadow: none;
+  border: none;
 }
 
 .filter-results {
@@ -479,13 +531,9 @@ img {
   background-color: var(--first_background-color);
   align-items: center;
   border-radius: 4px;
-  border: 2px solid rgba(50, 50, 50, 0.25);
   box-sizing: border-box;
 }
 
-.filter-form__item:hover {
-  border: 2px solid var(--first-font-color);
-}
 
 .filter-results__title {
   flex-direction: row;
@@ -505,14 +553,15 @@ img {
   line-height: 21px;
   padding: 14px 20px;
   align-items: center;
+  border: 2px solid rgba(50, 50, 50, 0.25);
 }
+
 
 .filter-results__typing-button {
   background-color: var(--first_background-color);
   cursor: pointer;
   margin-right: 8px;
   box-sizing: border-box;
-  padding: auto;
 }
 
 .filter-results__typing-button:last-child {
@@ -524,6 +573,13 @@ img {
   height: 48px;
   padding: 14px 12px;
   vertical-align: middle;
+  border-radius: 4px;
+  border: 2px solid rgba(50, 50, 50, 0.25);
+}
+
+.filter-results__typing-image:hover,
+.filter-results__select:hover {
+  border: 2px solid var(--first-font-color);
 }
 
 .hotel__cards {
@@ -538,9 +594,9 @@ img {
   gap: 20px;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   font-size: 18px;
   line-height: 21px;
-  align-items: center;
   background-color: var(--first_background-color);
   padding: 20px;
   border-radius: 4px;
