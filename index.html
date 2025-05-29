@@ -62,7 +62,8 @@
 
         <section class="advantages__section">
           <h2 class="advantages__section-title title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="advantages__section-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <p class="advantages__section-text subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+          </p>
         </section>
 
         <ul class="advantages">
@@ -81,21 +82,21 @@
           <li class="advantages__item">
             <div class="inform__block">
               <h3 class="advantages__title title">Небольшая площадь</h3>
-              <p>Все достопримечательности находятся очень близко</p>
+              <p class="subtitle">Все достопримечательности находятся очень близко</p>
             </div>
           </li>
 
           <li class="advantages__item ">
             <div class="inform__block">
               <h3 class="advantages__title title">Красивая дорога</h3>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
 
           <li class="advantages__item">
             <div class="inform__block">
               <h3 class="advantages__title title">Мало туристов</h3>
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
+              <p class="subtitle">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </li>
 
@@ -115,13 +116,13 @@
         <section class="offers">
           <div class="offers__text">
             <h2 class="offers__title title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-            <span class="offers__subtitle">Опытный персонал и качественное обслуживание!</span>
+            <span class="offers__subtitle subtitle">Опытный персонал и качественное обслуживание!</span>
           </div>
           <div class="offers__content">
             <article class="offers__item inform__block">
               <img class="offers__item-image" src="svg/house.svg" alt="домик" width="75" height="72">
               <h3 class="offers__item-category title">Жильё</h3>
-              <P class="offers__item-description">
+              <P class="offers__item-description subtitle">
                 Рекомендуем пожить в настоящем мотеле,
                 всё как в кино!
               </P>
@@ -130,7 +131,7 @@
             <article class="offers__item inform__block">
               <img class="offers__item-image" src="svg/burger.svg" alt="бургер" width="74" height="70">
               <h3 class="offers__item-category title">Еда</h3>
-              <p class="offers__item-description">
+              <p class="offers__item-description subtitle">
                 Всегда заказывайте
                 топовый фирменный бургер, вы не разочаруетесь!
               </p>
@@ -139,7 +140,7 @@
             <article class="offers__item inform__block">
               <img class="offers__item-image" src="svg/present-box.svg" alt="сувенир" width="64" height="76">
               <h3 class="offers__item-category title">Сувениры</h3>
-              <p class="offers__item-description">
+              <p class="offers__item-description subtitle">
                 Не только китайского, но и настоящего местного производства!
               </p>
             </article>
@@ -147,7 +148,7 @@
 
           <section class="offers__booking">
             <h2 class="offers__booking-title title">Заинтересовались?</h2>
-            <p class="offers__booking-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
+            <p class="offers__booking-text subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
               предложения
               гостиниц в Седоне</p>
             <a class="offers__booking-button button button__primary">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
@@ -200,42 +201,61 @@
         </div>
       </footer>
 
+      <div class="modal-form__overlay ">
+        <form class="modal-form">
+          <h2 class="modal-form__title title">Поиск гостиницы в Седоне</h2>
+          <section class="modal-form__dates ">
+            <div class="modal-form__date modal-form__item">
+              <h4 class="title">Дата заезда:</h4>
+              <div class="modal-form__input-wrapper">
+                <input class="modal-form__input" type="text" value="27 апреля 2020">
+                <p class="modal-form__input-error-text">Мы не можем отправить вас в прошлое.</p>
+                <p class="visually-hidden">На эти даты есть свободные номера. Пока есть.</p>
+                <img class="modal-form__input-icon" src="svg/calendar-icon.svg" loading="lazy" alt="календарь"
+                  width="16" height="15">
+              </div>
+            </div>
 
-      <form class="modal-form visually-hidden">
-        <h2 class="modal-form__title">Поиск гостиницы в Седоне</h2>
-        <section class="modal-form__dates">
-          <div class="modal-form__date">
-            <h4>Дата заезда:</h4>
-            <input type="text" value="27 апреля 2020">
-            <p>Мы не можем отправить вас в прошлое.</p>
-          </div>
-          <div class="modal-form__date">
-            <h4>Дата выезда:</h4>
-            <input type="text" value="1 сентября 2023">
-            <p>На эти даты есть свободные номера. Пока есть.</p>
-          </div>
-        </section>
+            <div class="modal-form__date modal-form__item">
+              <h4 class="title">Дата выезда:</h4>
 
-        <section class="modal-form__guests">
-          <div class="modal-form__guest">
-            <h4>Взрослые:</h4>
-            <button type="button">-</button>
-            <span>2</span>
-            <button type="button">+</button>
-          </div>
-          <div class="modal-form__guest">
-            <h4>Дети:</h4>
-            <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-              размещаются бесплатно.</p>
-            <button type="button">-</button>
-            <span>2</span>
-            <button type="button">+</button>
-          </div>
-        </section>
+              <div class="modal-form__input-wrapper">
+                <input class="modal-form__input" type="text" value="1 сентября 2023">
+                <p class="visually-hidden">Мы не можем отправить вас в прошлое.</p>
+                <p class="modal-form__input-text">На эти даты есть свободные номера. Пока есть.</p>
+                <img class="modal-form__input-icon" src="svg/calendar-icon.svg" loading="lazy" alt="календарь"
+                  width="16" height="15">
+              </div>
+            </div>
 
-        <button class="modal-form__close" type="button" aria-label="закрыть окно поиска"></button>
-        <button class="modal-form__submit" type="submit">Найти</button>
-      </form>
+            <div class="modal-form__guests modal-form__item">
+              <div class="modal-form__guest">
+                <h4 class="title">Взрослые:</h4>
+                <div class="modal-form__guest-amount">
+                  <button class="modal-form__guest-amount-minus" type="button"></button>
+                  <span>2</span>
+                  <button class="modal-form__guest-amount-plus" type="button"></button>
+                </div>
+              </div>
+              <div class="modal-form__guest ">
+                <h4 class="title">Дети:</h4>
+                <p class="visually-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                  лет.
+                  Дети до 6 лет
+                  размещаются бесплатно.</p>
+                <div class="modal-form__guest-amount">
+                  <button class="modal-form__guest-amount-minus" type="button"></button>
+                  <span>2</span>
+                  <button class="modal-form__guest-amount-plus" type="button"></button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <button class="modal-form__close" type="button" aria-label="закрыть окно поиска"></button>
+          <button class="modal-form__submit button" type="submit">Найти</button>
+        </form>
+      </div>
 
     </div>
   </body>
