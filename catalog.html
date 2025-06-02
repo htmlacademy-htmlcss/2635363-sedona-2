@@ -47,7 +47,7 @@
             <img class="header__favorites-icon" src="svg/heart-icon.svg" loading="lazy" alt="добавить в избранное">
             <span class="header__favorites-count">12</span>
           </div>
-          <button class="header__button button">Хочу сюда!</button>
+          <button class="button__first-color button">Хочу сюда!</button>
         </div>
       </header>
 
@@ -117,13 +117,15 @@
               </div>
 
               <div class="filter__cost-scale" aria-label="ползунок для выбора цены">
-                <div class="filter__cost-range-bar"></div>
+                <div class="filter__cost-range-bar-min"></div>
+                <div class="filter__cost-range-line"></div>
+                <div class="filter__cost-range-bar-max"></div>
               </div>
             </div>
 
             <div class="filter__buttons form__item">
-              <button class="filter__button-acept button button__primary" type="submit">Применить</button>
-              <button class="filter__button-reset button button__primary" type="reset">Сбросить</button>
+              <button class="filter__button-acept button button__second-color" type="submit">Применить</button>
+              <button class="filter__button-reset button " type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -162,11 +164,11 @@
               <p class="hotel__card-type">Гостиница</p>
               <span class="hotel__card-price">От 4000 ₽</span>
 
-              <a class="hotel__card-link hotel__card-item button button__secondary" href="*">подробнее</a>
-              <button class="hotel__card-favorites hotel__card-item button button__secondary" type="button">в
+              <a class=" button button__secondary button__first-color" href="*">подробнее</a>
+              <button class="hotel__card-favorites button button__secondary button__second-color" type="button">в
                 избранное</button>
 
-              <div class="hotel__card-stars hotel__card-item">
+              <div class="hotel__card-stars ">
                 <img class="hotel__card-stars-image" src="svg/star.svg" loading="lazy" alt="звездочка" width="18"
                   height="17">
                 <img class="hotel__card-stars-image" src="svg/star.svg" loading="lazy" alt="звездочка" width="18"
@@ -177,7 +179,7 @@
                   height="17">
               </div>
 
-              <div class="hotel__card-raiting hotel__card-item">
+              <div class="hotel__card-raiting">
                 <span class="hotel__card-raiting-text">Рейтинг: 8,5</span>
               </div>
             </article>
@@ -187,8 +189,8 @@
               <h3 class="hotel__card-title">Villas at Poco Diablo</h3>
               <p class="hotel__card-type">Гостиница</p>
               <span class="hotel__card-price">От 5000 ₽</span>
-              <a class="hotel__card-link button button__secondary" href="*">подробнее</a>
-              <button class="hotel__card-favorites-added button button__secondary" type="button">в избранном</button>
+              <a class="hotel__card-link button button__secondary button__first-color" href="*">подробнее</a>
+              <button class="button__third-color button button__secondary" type="button">в избранном</button>
 
               <div class="hotel__card-stars">
                 <img class="hotel__card-stars-image" src="svg/star.svg" loading="lazy" alt="звездочка" width="18"
@@ -211,8 +213,9 @@
               <h3 class="hotel__card-title">Desert Quail Inn</h3>
               <p class="hotel__card-type">Гостиница</p>
               <span class="hotel__card-price">От 2500 ₽</span>
-              <a class="hotel__card-link button button__secondary" href="*">подробнее</a>
-              <button class="hotel__card-favorites button button__secondary" type="button">в избранное</button>
+              <a class="hotel__card-link button button__secondary button__first-color" href="*">подробнее</a>
+              <button class="hotel__card-favorites button button__secondary button__second-color" type="button">в
+                избранное</button>
 
               <div class="hotel__card-stars">
                 <img class="hotel__card-stars-image" src="svg/star.svg" loading="lazy" alt="звездочка" width="18"
@@ -233,8 +236,9 @@
               <h3 class="hotel__card-title">GreenTree Inn</h3>
               <p class="hotel__card-type">Гостиница</p>
               <span class="hotel__card-price">От 1500 ₽</span>
-              <a class="hotel__card-link button button__secondary" href="*">подробнее</a>
-              <button class="hotel__card-favorites button button__secondary" type="button">в избранное</button>
+              <a class="hotel__card-link button button__secondary button__first-color" href="*">подробнее</a>
+              <button class="hotel__card-favorites button button__secondary button__second-color" type="button">в
+                избранное</button>
 
               <div class="hotel__card-stars">
                 <img class="hotel__card-stars-image" src="svg/star.svg" loading="lazy" alt="звездочка" width="18"
@@ -275,7 +279,7 @@
           <span class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</span>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscribe__input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-            <input class="subscribe__button button button__primary" type="submit" value="Подписаться">
+            <input class="subscribe__button button button__second-color" type="submit" value="Подписаться">
           </form>
         </section>
 
@@ -315,42 +319,66 @@
         </div>
       </footer>
 
+      <div class="modal-form__overlay modal-form__hidden">
+        <form class="modal-form">
+          <h2 class="modal-form__title title">Поиск гостиницы в Седоне</h2>
+          <section class="modal-form__dates ">
+            <div class="modal-form__date modal-form__item">
+              <h4 class="title">Дата заезда:</h4>
+              <div class="modal-form__input-wrapper">
+                <input class="modal-form__input" type="text" value="27 апреля 2020">
+                <p class="modal-form__input-error-text">Мы не можем отправить вас в прошлое.</p>
+                <p class="visually-hidden">На эти даты есть свободные номера. Пока есть.</p>
+                <img class="modal-form__input-icon" src="svg/calendar-icon.svg" loading="lazy" alt="календарь"
+                  width="16" height="15">
+              </div>
+            </div>
 
+            <div class="modal-form__date modal-form__item">
+              <h4 class="title">Дата выезда:</h4>
 
-      <form class="modal-form visually-hidden">
-        <h2 class="modal-form__title">Поиск гостиницы в Седоне</h2>
-        <section class="modal-form__dates">
-          <div class="modal-form__date">
-            <h4>Дата заезда:</h4>
-            <input type="text" value="27 апреля 2020">
-            <p>Мы не можем отправить вас в прошлое.</p>
-          </div>
-          <div class="modal-form__date">
-            <h4>Дата выезда:</h4>
-            <input type="text" value="1 сентября 2023">
-            <p>На эти даты есть свободные номера. Пока есть.</p>
-          </div>
-        </section>
-        <section class="modal-form__guests">
-          <div class="modal-form__guest">
-            <h4>Взрослые:</h4>
-            <button type="button">-</button>
-            <span>2</span>
-            <button type="button">+</button>
-          </div>
-          <div class="modal-form__guest">
-            <h4>Дети:</h4>
-            <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-              размещаются бесплатно.</p>
-            <button type="button">-</button>
-            <span>2</span>
-            <button type="button">+</button>
-          </div>
-        </section>
+              <div class="modal-form__input-wrapper">
+                <input class="modal-form__input" type="text" value="1 сентября 2023">
+                <p class="visually-hidden">Мы не можем отправить вас в прошлое.</p>
+                <p class="modal-form__input-text">На эти даты есть свободные номера. Пока есть.</p>
+                <img class="modal-form__input-icon" src="svg/calendar-icon.svg" loading="lazy" alt="календарь"
+                  width="16" height="15">
+              </div>
+            </div>
 
-        <button class="modal-form__close" type="button" aria-label="закрыть окно поиска"></button>
-        <button class="modal-form__submit" type="submit">Найти</button>
-      </form>
+            <div class="modal-form__guests modal-form__item">
+              <div class="modal-form__guest">
+                <h4 class="modal-form__title title">Взрослые:</h4>
+                <div class="modal-form__guest-amount">
+                  <button class="modal-form__guest-amount-minus" type="button"></button>
+                  <span>2</span>
+                  <button class="modal-form__guest-amount-plus" type="button"></button>
+                </div>
+              </div>
+              <div class="modal-form__guest modal-form__child-amount">
+                <div class="modal-form__child-info">
+                  <h4 class=" title">Дети:</h4>
+
+                  <img class="modal-form__child-info-icon" src="./svg/modal-info-icon.svg"
+                    alt="описание действия во вкладке дети">
+                  <span class="modal-form__child-info-text">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18лет. Дети до 6
+                    летразмещаются бесплатно.
+                  </span>
+                </div>
+                <div class="modal-form__guest-amount">
+                  <button class="modal-form__guest-amount-minus" type="button"></button>
+                  <span>2</span>
+                  <button class="modal-form__guest-amount-plus" type="button"></button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <button class="modal-form__close" type="button" aria-label="закрыть окно поиска"></button>
+          <button class="modal-form__submit button" type="submit">Найти</button>
+        </form>
+      </div>
 
     </div>
   </body>

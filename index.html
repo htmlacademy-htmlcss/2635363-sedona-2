@@ -46,7 +46,7 @@
             <img class="header__favorites-icon" src="svg/heart-icon.svg" loading="lazy" alt="добавить в избранное">
             <span class="header__favorites-count">12</span>
           </div>
-          <button class="header__button button">Хочу сюда!</button>
+          <button class="button__first-color button">Хочу сюда!</button>
         </div>
       </header>
 
@@ -82,6 +82,7 @@
           <li class="advantages__item">
             <div class="inform__block">
               <h3 class="advantages__title title">Небольшая площадь</h3>
+              <div class="inform__block__border"></div>
               <p class="subtitle">Все достопримечательности находятся очень близко</p>
             </div>
           </li>
@@ -89,6 +90,7 @@
           <li class="advantages__item ">
             <div class="inform__block">
               <h3 class="advantages__title title">Красивая дорога</h3>
+              <div class="inform__block__border"></div>
               <p class="subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
@@ -96,6 +98,7 @@
           <li class="advantages__item">
             <div class="inform__block">
               <h3 class="advantages__title title">Мало туристов</h3>
+              <div class="inform__block__border"></div>
               <p class="subtitle">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </li>
@@ -151,7 +154,7 @@
             <p class="offers__booking-text subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
               предложения
               гостиниц в Седоне</p>
-            <a class="offers__booking-button button button__primary">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+            <a class="offers__booking-button button__first-color button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
           </section>
         </section>
 
@@ -160,12 +163,11 @@
           <span class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</span>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscribe__input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-            <input class="subscribe__button button" type="submit" value="Подписаться">
+            <input class="subscribe__button button button__second-color" type="submit" value="Подписаться">
           </form>
         </section>
 
       </main>
-
 
       <footer class="footer">
         <div class="footer__contacts">
@@ -230,19 +232,24 @@
 
             <div class="modal-form__guests modal-form__item">
               <div class="modal-form__guest">
-                <h4 class="title">Взрослые:</h4>
+                <h4 class="modal-form__title title">Взрослые:</h4>
                 <div class="modal-form__guest-amount">
                   <button class="modal-form__guest-amount-minus" type="button"></button>
                   <span>2</span>
                   <button class="modal-form__guest-amount-plus" type="button"></button>
                 </div>
               </div>
-              <div class="modal-form__guest ">
-                <h4 class="title">Дети:</h4>
-                <p class="visually-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
-                  лет.
-                  Дети до 6 лет
-                  размещаются бесплатно.</p>
+              <div class="modal-form__guest modal-form__child-amount">
+                <div class="modal-form__child-info">
+                  <h4 class=" title">Дети:</h4>
+
+                  <img class="modal-form__child-info-icon" src="./svg/modal-info-icon.svg"
+                    alt="описание действия во вкладке дети">
+                  <span class="modal-form__child-info-text">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18лет. Дети до 6
+                    летразмещаются бесплатно.
+                  </span>
+                </div>
                 <div class="modal-form__guest-amount">
                   <button class="modal-form__guest-amount-minus" type="button"></button>
                   <span>2</span>
