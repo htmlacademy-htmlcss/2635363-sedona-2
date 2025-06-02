@@ -40,7 +40,7 @@
 
   --button__first-color: rgba(117, 97, 87, 1);
   --button__first-color_active: rgba(97, 80, 72, 1);
-  --button__second-color: rgba(130, 179, 211, 1);
+  --button__second-color: rgba(131, 179, 211, 1);
   --button__second-color_active: rgba(104, 162, 202, 1);
   --button__third-color: rgba(125, 181, 79, 1);
   --button__third-color_active: rgba(108, 158, 66, 1);
@@ -219,6 +219,16 @@ img {
   background-color: var(--button__third-color);
 }
 
+.button__tranparent-color:hover {
+  opacity: 0.6;
+}
+
+.button__tranparent-color:focus-within {
+  opacity: 0.6;
+  outline: 2px solid var(--button__second-color);
+  outline-offset: -2px;
+}
+
 .button:disabled {
   color: var(--second-font-color__opacity3);
   background-color: var(--button__disabled-color);
@@ -257,6 +267,10 @@ img {
   padding: 20px 0;
   padding-bottom: 18px;
   border-bottom: 2px solid transparent;
+}
+
+.header__nav-item--current {
+  border-bottom: 2px solid var(--button__border-color);
 }
 
 .header__nav-item:hover {
@@ -967,7 +981,7 @@ img {
 }
 
 .modal-form__hidden {
-  display: none;
+  /* display: none; */
 }
 
 .modal-form {
@@ -1003,13 +1017,9 @@ img {
   line-height: 20px;
 }
 
-.modal-form input {
-  font-size: 18px;
-  line-height: 20px;
-}
-
-
 .modal-form__input-wrapper {
+  width: 440px;
+  margin-left: 24px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -1017,9 +1027,13 @@ img {
   align-items: center;
   box-sizing: border-box;
   background-color: var(--input-background-color);
+  border-radius: 4px;
 }
 
 .modal-form__input {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--fourth-font-color);
   padding: 12px 20px;
   border-radius: 4px;
   width: 320px;
@@ -1050,12 +1064,12 @@ img {
 
 .modal-form__guests {
   width: 100%;
-  justify-content: space-between;
-  gap: 88px;
+  display: grid;
+  grid-template-columns: 247px 242px;
+  grid-gap: 88px;
 }
 
 .modal-form__guest {
-  min-width: 247px;
   height: 48px;
   display: flex;
   justify-content: space-between;
@@ -1075,6 +1089,8 @@ img {
   align-items: center;
   text-align: center;
   box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .modal-form__child-info {
@@ -1088,7 +1104,7 @@ img {
   position: absolute;
   display: none;
   width: 216px;
-  top: -24px;
+  top: -100%;
   left: 0;
   transform: translateY(50%) translateX(-22%);
   padding: 15px 18px 18px 22px;
