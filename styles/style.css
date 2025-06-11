@@ -1458,8 +1458,9 @@ img {
 }
 
 .modal-form__item {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 48px;
   margin-bottom: 47px;
   font-family: inherit;
   font-size: 20px;
@@ -1524,6 +1525,7 @@ img {
 
 .modal-form__guests {
   width: 100%;
+  min-height: 48px;
   display: grid;
   grid-template-columns: 247px 242px;
   grid-gap: 88px;
@@ -1557,6 +1559,7 @@ img {
 .modal-form__child-info {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -1577,6 +1580,13 @@ img {
   border-radius: 10px;
 }
 
+.modal-form__child-info-icon:hover {
+
+  + .modal-form__child-info-text {
+    display: block;
+  }
+}
+
 .modal-form__child-info-text::after {
   content: "";
   position: absolute;
@@ -1586,13 +1596,6 @@ img {
   width: 20px;
   height: 20px;
   background-color: var(--fifth__background-color);
-}
-
-.modal-form__child-info-icon:hover {
-
-  + .modal-form__child-info-text {
-    display: block;
-  }
 }
 
 .modal-form__guest-amount span {
