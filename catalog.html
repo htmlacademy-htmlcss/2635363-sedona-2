@@ -29,6 +29,11 @@
                 О Седоне
               </a>
             </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link header__nav-link--current">
+                Гостиницы
+              </a>
+            </li>
           </ul>
         </nav>
 
@@ -43,7 +48,7 @@
               loading="lazy" alt="добавить в избранное">
             <span class="header__favorites-count">12</span>
           </div>
-          <button class="button__first-color button">Хочу сюда!</button>
+          <button class="button__first-color header__favorites-button button">Хочу сюда!</button>
         </div>
       </header>
 
@@ -65,61 +70,80 @@
           </div>
 
           <form class="filter__form" action="*" method="get">
-            <div class="filter__group form__item">
-              <p class="filter__label">Инфраструктура:</p>
-              <label class="filter__option" for="pool">
-                <input class="filter__checkbox" type="checkbox" name="infrastructure" value="pool" id="pool" checked>
-                <span>Бассейн</span>
-              </label>
-              <label class="filter__option" for="parking">
-                <input class="filter__checkbox" type="checkbox" name="infrastructure" value="parking" id="parking"
-                  checked>
-                <span>Парковка</span>
-              </label>
-              <label class="filter__option" for="wifi">
-                <input class="filter__checkbox" type="checkbox" name="infrastructure" value="wifi" id="wifi">
-                <span>Wi-Fi</span>
-              </label>
-            </div>
+            <fieldset class="form__item">
+              <legend class="filter__label">Инфраструктура:</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <label class="filter__option" for="pool">
+                    <input class="filter__checkbox" type="checkbox" name="infrastructure" value="pool" id="pool"
+                      checked>
+                    <span>Бассейн</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__option" for="parking">
+                    <input class="filter__checkbox" type="checkbox" name="infrastructure" value="parking" id="parking"
+                      checked>
+                    <span>Парковка</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__option" for="wifi">
+                    <input class="filter__checkbox" type="checkbox" name="infrastructure" value="wifi" id="wifi">
+                    <span>Wi-Fi</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-            <div class="filter__group form__item">
-              <p class="filter__label">Тип жилья:</p>
-              <label class="filter__option" for="option__hotel">
-                <input tabindex="0" class="filter__radio" type="radio" name="option" value="1" id="option__hotel"
-                  checked>
-                <span>Гостиница</span>
-              </label>
-              <label class="filter__option" for="option__motel">
-                <input tabindex="0" class="filter__radio" type="radio" name="option" value="2" id="option__motel">
-                <span>Мотель</span>
-              </label>
-              <label class="filter__option" for="option__apartment">
-                <input tabindex="0" class="filter__radio" type="radio" name="option" value="3" id="option__apartment">
-                <span>Апартаменты</span>
-              </label>
-            </div>
+            <fieldset class="form__item">
+              <legend class="filter__label">Тип жилья:</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <label class="filter__option" for="option__hotel">
+                    <input tabindex="0" class="filter__radio" type="radio" name="option" value="1" id="option__hotel"
+                      checked>
+                    <span>Гостиница</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__option" for="option__motel">
+                    <input tabindex="0" class="filter__radio" type="radio" name="option" value="2" id="option__motel">
+                    <span>Мотель</span>
+                  </label>
+                </li>
+                <li class="filter__item">
+                  <label class="filter__option" for="option__apartment">
+                    <input tabindex="0" class="filter__radio" type="radio" name="option" value="3"
+                      id="option__apartment">
+                    <span>Апартаменты</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-            <div class="filter__cost form__item">
-              <p>Стоимость, ₽:</p>
+            <fieldset class="filter__cost form__item">
+              <legend class="filter__label">Стоимость, ₽:</legend>
+              <ul>
+                <li class="filter__cost-range">
+                  <label class="cost-range__min" for="min-price">
+                    <input class="cost-range__input" id="min-price" name="min-price" type="number" value="0" required>
+                    <span class="cost-range__label">От</span>
+                  </label>
 
-              <div class="filter__cost-range">
-                <label class="cost-range__min" for="min-price">
-                  <input class="cost-range__input" id="min-price" name="min-price" type="number" value="0" required>
-                  <span class="cost-range__label">От</span>
-                </label>
-
-                <label class="cost-range__max" for="max-price">
-                  <input class="cost-range__input" id="max-price" name="max-price" type="number" value="9000" required>
-                  <span class="cost-range__label">До</span>
-                </label>
-              </div>
-
-              <div class="filter__cost-scale" aria-label="ползунок для выбора цены">
-                <div tabindex="0" class="filter__cost-range-bar-min"></div>
-                <div class="filter__cost-range-line"></div>
-                <div tabindex="0" class="filter__cost-range-bar-max"></div>
-              </div>
-            </div>
+                  <label class="cost-range__max" for="max-price">
+                    <input class="cost-range__input" id="max-price" name="max-price" type="number" value="9000"
+                      required>
+                    <span class="cost-range__label">До</span>
+                  </label>
+                </li>
+                <li class="filter__cost-scale" aria-label="ползунок для выбора цены">
+                  <div tabindex="0" class="filter__cost-range-bar-min"></div>
+                  <div class="filter__cost-range-line"></div>
+                  <div tabindex="0" class="filter__cost-range-bar-max"></div>
+                </li>
+              </ul>
+            </fieldset>
 
             <div class="filter__buttons form__item">
               <button class="filter__button-acept button button__second-color" type="submit">Применить</button>
@@ -130,7 +154,7 @@
 
         <section class="filter-results">
           <form class="filter-results__form">
-            <div class="filter-results__title ">
+            <div class="filter-results__title">
               <label class="filter-results__title title">Найдено гостиниц:</label>
               <span class="filter-results__count title">38</span>
             </div>
@@ -269,7 +293,7 @@
               <a class="pagination__link" href="#">4</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#">5</a>
+              <a class="pagination__link" href="#">10</a>
             </li>
           </ul>
         </section>
@@ -371,68 +395,6 @@
           </a>
         </div>
       </footer>
-
-      <div class="modal-form__overlay modal-form__hidden">
-        <form class="modal-form">
-          <h2 class="modal-form__title title">Поиск гостиницы в Седоне</h2>
-          <section class="modal-form__dates ">
-            <div class="modal-form__date modal-form__item">
-              <h4 class="title">Дата заезда:</h4>
-              <div class="modal-form__input-wrapper">
-                <input class="modal-form__input" type="text" value="Укажите дату">
-                <p class="modal-form__input-error-text">Мы не можем отправить вас в прошлое.</p>
-                <p class="visually-hidden">На эти даты есть свободные номера. Пока есть.</p>
-                <img class="modal-form__input-icon" src="svg/calendar-icon.svg" loading="lazy" alt="календарь"
-                  width="16" height="15">
-              </div>
-            </div>
-
-            <div class="modal-form__date modal-form__item">
-              <h4 class="title">Дата выезда:</h4>
-
-              <div class="modal-form__input-wrapper">
-                <input class="modal-form__input" type="text" value="Укажите дату">
-                <p class="visually-hidden">Мы не можем отправить вас в прошлое.</p>
-                <p class="modal-form__input-text">На эти даты есть свободные номера. Пока есть.</p>
-                <img class="modal-form__input-icon" src="svg/calendar-icon.svg" loading="lazy" alt="календарь"
-                  width="16" height="15">
-              </div>
-            </div>
-
-            <div class="modal-form__guests modal-form__item">
-              <div class="modal-form__guest">
-                <h4 class="modal-form__title title">Взрослые:</h4>
-                <div class="modal-form__guest-amount">
-                  <button class="modal-form__guest-amount-minus" type="button"></button>
-                  <span>2</span>
-                  <button class="modal-form__guest-amount-plus" type="button"></button>
-                </div>
-              </div>
-              <div class="modal-form__guest modal-form__child-amount">
-                <div class="modal-form__child-info">
-                  <h4 class=" title">Дети:</h4>
-
-                  <img class="modal-form__child-info-icon" src="./svg/modal-info-icon.svg"
-                    alt="описание действия во вкладке дети">
-                  <span class="modal-form__child-info-text">
-                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18лет. Дети до 6
-                    летразмещаются бесплатно.
-                  </span>
-                </div>
-                <div class="modal-form__guest-amount">
-                  <button class="modal-form__guest-amount-minus" type="button"></button>
-                  <span>2</span>
-                  <button class="modal-form__guest-amount-plus" type="button"></button>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <button class="modal-form__close" type="button" aria-label="закрыть окно поиска"></button>
-          <button class="modal-form__submit button" type="submit">Найти</button>
-        </form>
-      </div>
-
     </div>
   </body>
 
