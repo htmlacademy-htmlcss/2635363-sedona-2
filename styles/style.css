@@ -16,14 +16,13 @@
 }
 
 :root {
-  --main-font: "PTSans", system-ui, "Arial", sans-serif;
-
   --page_background: rgba(242, 242, 242, 1);
   --first_background-color: rgba(255, 255, 255, 1);
   --first_background-color__opacity3: rgba(255, 255, 255, 0.3);
   --second_background-color: rgba(131, 179, 211, 0.2);
   --third_background-color: rgba(131, 179, 211, 0.12);
   --fourth_background-color: rgba(130, 179, 211, 1);
+  --element__background-color: rgba(229, 229, 229, 1);
   --fifth__background-color: rgba(51, 51, 51, 1);
   --first-font-color: rgba(0, 0, 0, 1);
   --first-font-color__opacity3: rgba(0, 0, 0, 0.3);
@@ -93,7 +92,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   background-color: var(--page_background);
-  font-family: var(--main-font);
+  font-family: "PTSans", system-ui, "Arial", sans-serif;
 }
 
 .page {
@@ -137,7 +136,7 @@ ul {
   text-decoration-color: inherit;
 }
 
-a {
+.page a {
   text-decoration: none;
 }
 
@@ -149,18 +148,16 @@ input {
   box-sizing: border-box;
 }
 
-input {
+.page input {
   appearance: none;
   -webkit-appearance: none
 }
 
-figure {
+.page figure {
   margin: 0;
 }
 
 img {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   vertical-align: middle;
 }
@@ -309,6 +306,10 @@ img {
   line-height: 24px;
   padding: 17px 0;
   color: var(--first-font-color);
+}
+
+.header__nav-link:active {
+  opacity: 0.6;
 }
 
 .header__nav-link--current .header__nav-link::after {
@@ -636,6 +637,7 @@ img {
   width: 100%;
   min-height: 412px;
   background-image: url("../img/catalog-bg-image.jpg");
+  background-color: var(--first__background-color);
   background-size: cover;
   background-repeat: no-repeat;
   vertical-align: middle;
@@ -1348,6 +1350,7 @@ img {
   padding-bottom: 104px;
   margin: 0 auto;
   background-image: url("../img/form-bg-image.jpg");
+  background-color: var(--first__background-color);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

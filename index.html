@@ -52,7 +52,7 @@
               <span class="header__favorites-count">12</span>
             </div>
           </div>
-          <button class="button__first-color header__favorites-button button">Хочу сюда!</button>
+          <button type="button" class="button__first-color header__favorites-button button">Хочу сюда!</button>
         </div>
       </header>
 
@@ -163,7 +163,8 @@
           <h2 class="subscribe__title title">Подпишитесь на рассылку</h2>
           <span class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</span>
           <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe__input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+            <input required class="subscribe__input" type="email" name="email" id="email" placeholder="Ваш e-mail"
+              required>
             <button class="subscribe__button button button__second-color" type="submit"
               value="Подписаться">Подписаться</button>
           </form>
@@ -268,13 +269,13 @@
       <div class="modal-form__overlay modal-form__hidden">
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="modal-form__title title">Поиск гостиницы в Седоне</h2>
-          <button class="modal-form__close" type="button" aria-label="закрыть окно поиска"></button>
+          <button type="button" class="modal-form__close" type="button" aria-label="закрыть окно поиска"></button>
           <div class="modal-form__wrapper">
             <div class="modal-form__info-wrapper">
               <label for="arrival-date" class="modal-form__label title">Дата Заезда:</label>
             </div>
             <div class="modal-form__input-wrapper">
-              <input id="arrival-date" class="modal-form__input" type="text" placeholder="Укажите дату">
+              <input required id="arrival-date" class="modal-form__input" type="text" placeholder="Укажите дату">
               <img class="modal-form__input-icon" src="svg/calendar-icon.svg" loading="lazy" alt="календарь" width="16"
                 height="15">
               <p class="modal-form__input-error-text">Мы не можем отправить вас в прошлое.</p>
@@ -284,7 +285,7 @@
               <label for="departure-date" class="modal-form__label title">Дата Выезда:</label>
             </div>
             <div class="modal-form__input-wrapper">
-              <input id="departure-date" class="modal-form__input" type="text" placeholder="Укажите дату">
+              <input required id="departure-date" class="modal-form__input" type="text" placeholder="Укажите дату">
               <img class="modal-form__input-icon" src="svg/calendar-icon.svg" loading="lazy" alt="календарь" width="16"
                 height="15">
               <p class="visually-hidden">Мы не можем отправить вас в прошлое.</p>
