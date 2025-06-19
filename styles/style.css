@@ -1450,7 +1450,6 @@ body {
 }
 
 .subscribe__form {
-  /* width: 684px; */
   display: flex;
   flex-wrap: wrap;
   min-height: 52px;
