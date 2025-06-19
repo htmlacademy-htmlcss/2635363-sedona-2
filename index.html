@@ -41,16 +41,10 @@
         <div class="header__userbar">
           <div class="header__search">
             <span class="visually-hidden">Поиск</span>
-            <div class="header__search-icon">
-              <img tabindex="0" src="svg/search-icon.svg" width="19" height="19" loading="lazy" alt="иконка поиска">
-            </div>
           </div>
           <div class="header__favorites">
-            <div class="header__favorites-icon">
-              <img tabindex="0" src="svg/heart-icon.svg" width="18" height="17" loading="lazy"
-                alt="добавить в избранное">
-              <span class="header__favorites-count">12</span>
-            </div>
+            <span class="visually-hidden">добавить в избранное</span>
+            <span class="header__favorites-count">12</span>
           </div>
           <button type="button" class="button__first-color header__favorites-button button">Хочу сюда!</button>
         </div>
@@ -125,25 +119,23 @@
           </div>
           <div class="offers__content">
             <article class="offers__item inform__block">
-              <img class="offers__item-image" src="svg/house.svg" alt="домик" width="75" height="72">
-              <h3 class="offers__item-category title">Жильё</h3>
-              <P class="offers__item-description subtitle">
+              <h3 class="offers__item-category offers__item-house title">Жильё
+              </h3>
+              <p class="offers__item-description subtitle">
                 Рекомендуем пожить<br> в настоящем мотеле,<br>
                 всё как в кино!
-              </P>
+              </p>
             </article>
 
             <article class="offers__item inform__block">
-              <img class="offers__item-image" src="svg/burger.svg" alt="бургер" width="74" height="70">
-              <h3 class="offers__item-category title">Еда</h3>
+              <h3 class="offers__item-category offers__item-food title">Еда</h3>
               <p class="offers__item-description subtitle">
                 Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!
               </p>
             </article>
 
             <article class="offers__item inform__block">
-              <img class="offers__item-image" src="svg/present-box.svg" alt="сувенир" width="64" height="76">
-              <h3 class="offers__item-category title">Сувениры</h3>
+              <h3 class="offers__item-category offers__item-gift title">Сувениры</h3>
               <p class="offers__item-description subtitle">
                 Не только китайского,<br> но и настоящего местного производства!
               </p>
@@ -265,7 +257,7 @@
       </footer>
 
       <!-- Модальное окно, для открытия modal-form__hidden-->
-      <div class="modal-form__overlay modal-form__hidden">
+      <div class="modal-form__overlay ">
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <h2 class="modal-form__title title">Поиск гостиницы в Седоне</h2>
           <button class="modal-form__close" type="button" aria-label="закрыть окно поиска"></button>
@@ -275,8 +267,9 @@
             </div>
             <div class="modal-form__input-wrapper">
               <input required id="arrival-date" class="modal-form__input" type="text" placeholder="Укажите дату">
-              <img class="modal-form__input-icon" src="svg/calendar-icon.svg" loading="lazy" alt="календарь" width="16"
-                height="15">
+              <div class="modal-form__input-calendar">
+                <span class="visually-hidden">календарь для выбора даты</span>
+              </div>
               <p class="modal-form__input-error-text">Мы не можем отправить вас в прошлое.</p>
               <p class="visually-hidden">На эти даты есть свободные номера. Пока есть.</p>
             </div>
@@ -285,8 +278,9 @@
             </div>
             <div class="modal-form__input-wrapper">
               <input required id="departure-date" class="modal-form__input" type="text" placeholder="Укажите дату">
-              <img class="modal-form__input-icon" src="svg/calendar-icon.svg" loading="lazy" alt="календарь" width="16"
-                height="15">
+              <div class="modal-form__input-calendar">
+                <span class="visually-hidden">календарь для выбора даты</span>
+              </div>
               <p class="visually-hidden">Мы не можем отправить вас в прошлое.</p>
               <p class="modal-form__input-text">На эти даты есть свободные номера. Пока есть.
               </p>
@@ -306,9 +300,7 @@
               <div class="modal-form__info-wrapper">
                 <label class="modal-form__label title">Дети:</label>
               </div>
-              <div class="modal-form__popover">
-                <img tabindex="0" width="26" height="26" class="modal-form__child-info-icon"
-                  src="./svg/modal-info-icon.svg" alt="описание действия во вкладке дети">
+              <div class="modal-form__popover" tabindex="0">
                 <span class="modal-form__child-info-text">
                   Укажите количество детей, которые будут с вами, возраст которых от 6 до 18лет. Дети до 6
                   летразмещаются бесплатно.
