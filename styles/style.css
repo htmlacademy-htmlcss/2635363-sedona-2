@@ -1881,7 +1881,8 @@ body {
 }
 
 .modal-form__popover:hover .modal-form__child-info-text,
-.modal-form__popover:focus-within .modal-form__child-info-text {
+.modal-form__popover:focus-within .modal-form__child-info-text,
+.modal-form__popover:focus-visible .modal-form__child-info-text {
   display: block;
 }
 
