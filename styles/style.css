@@ -390,12 +390,23 @@ body {
   width: 90%;
   height: 2px;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 5%;
   background-color: var(--button__border-color);
   z-index: 5;
 }
 
+.header__search:focus-within::after,
+.header__favorites:focus-within::after {
+  content: '';
+  width: 90%;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 5%;
+  background-color: var(--button__border-color);
+  z-index: 5;
+}
 
 .header__favorites-count {
   position: absolute;
