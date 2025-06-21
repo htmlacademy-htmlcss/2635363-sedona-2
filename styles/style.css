@@ -1441,6 +1441,10 @@ body {
   text-align: center;
 }
 
+.subscribe-index {
+  background-color: var(--fifth__background-color);
+}
+
 .catalog-page__subscribe {
   background-image: none;
   color: var(--first-font-color);
