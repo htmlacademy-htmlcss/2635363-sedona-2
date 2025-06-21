@@ -744,7 +744,7 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.breadcrumbs__link:hover {
+.breadcrumbs__link:active {
   opacity: 0.3;
 }
 
