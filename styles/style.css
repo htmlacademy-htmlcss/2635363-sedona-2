@@ -667,7 +667,7 @@ body {
   width: 100%;
   min-height: 412px;
   background-image: url("../img/catalog-bg-image.jpg");
-  background-color: var(--first__background-color);
+  background-color: var(--fifth__background-color);
   background-size: cover;
   background-repeat: no-repeat;
   vertical-align: middle;
@@ -741,6 +741,10 @@ body {
 .breadcrumbs__link:hover {
   opacity: 0.6;
   transition: opacity 0.3s ease-in-out;
+}
+
+.breadcrumbs__link:hover {
+  opacity: 0.3;
 }
 
 
@@ -1206,6 +1210,7 @@ body {
   height: 212px;
   object-fit: cover;
   vertical-align: middle;
+  background-color: var(--fifth__background-color);
 }
 
 .hotel__card-title {
