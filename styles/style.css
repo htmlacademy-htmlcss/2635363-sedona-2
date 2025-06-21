@@ -572,6 +572,7 @@ body {
 .advantages__item-image-wrapper {
   width: 800px;
   min-height: 385px;
+  background-color: var(--first-font-color__opacity3);
 }
 
 .advantages__item-image {
