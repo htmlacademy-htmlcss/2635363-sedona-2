@@ -1162,12 +1162,12 @@ body {
   box-sizing: border-box;
 }
 
-.filter-results__typing-button:focus-visible .filter-results__typing-image {
+.filter-results__typing-button:focus-visible {
   border: 2px solid var(--button__second-color_active);
 }
 
-.filter-results__typing-button:hover .filter-results__typing-image,
-.filter-results__typing-button:active .filter-results__typing-image {
+.filter-results__typing-button:hover,
+.filter-results__typing-button:active {
   border: 2px solid var(--border__color__black);
 }
 
@@ -1176,12 +1176,28 @@ body {
 }
 
 .filter-results__typing-image {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: center;
   width: 48px;
   height: 48px;
   padding: 14px 12px;
   vertical-align: middle;
   border-radius: 4px;
   border: 2px solid var(--border__color);
+}
+
+.grid-typing-image {
+  background-image: url("../svg/grid-typing-1.svg");
+}
+
+.card-typing-image {
+  background-image: url("../svg/grid-typing-2.svg");
+}
+
+.list-typing-image {
+  background-image: url("../svg/grid-typing-3.svg");
 }
 
 .grid-typing__active {
